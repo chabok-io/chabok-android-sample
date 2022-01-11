@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+
+        // Huawei maven
+        maven { url 'https://developer.huawei.com/repo/' }
+
+        maven { url "https://chabok.jfrog.io/artifactory/Chabok" }
+
+    }
+}
+rootProject.name = "chabokSample"
+include ':app'
